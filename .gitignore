@@ -46,3 +46,4 @@ healthy
 
 *.txt
 *.pid
+.env

@@ -7,7 +7,7 @@
     "dev": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
@@ -15,9 +15,9 @@
     "mongodb": "^4.5.0",
     "mongodb-client-encryption": "^2.0.0",
     "mongoose": "^6.2.7",
-    "nodemon": "^2.0.15",
-    "twilio": "^3.76.1",
-    "uuid": "^8.3.2",
     "uuid-base64": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
