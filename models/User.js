@@ -9,9 +9,11 @@ const UserSchema = new Schema({
   },
   email: {
     type: "String",
+    required: true,
   },
   ssn: {
     type: "string",
+    index: true,
   },
 });
 

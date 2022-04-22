@@ -1,4 +1,4 @@
-const { publicEncrypt } = require("crypto");
+const { publicEncrypt, privateDecrypt } = require("crypto");
 const crypto = {
   CRYPTO_PASSPHRASE: "",
   privateKey:

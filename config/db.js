@@ -29,7 +29,7 @@ const client = new MongoClient(connectionString, {
 });
 
 const secureClient = (JSONSchemaCreator) => {
-  const schemaMap = JSONSchemaCreator(keyIdBinary);
+  const schemaMap = JSONSchemaCreator.map((schema) => schema(keyIdBinary));
   return new MongoClient(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
