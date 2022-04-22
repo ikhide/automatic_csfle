@@ -39,7 +39,7 @@ secureClient([UserSchema, UserSchema2])
   .connect()
   .then((connect) => {
     connection = connect;
-    console.log("Secure database connection Create");
+    console.log("Secure database connection created");
   });
 
 //use routes
@@ -104,7 +104,6 @@ app.get("/fetchUsersNormal", async (req, res) => {
 });
 app.get("/fetchUsersUnEncrypt", async (req, res) => {
   const startTime = new Date();
-
   try {
     const keyDB = connection.db("db1");
     const collection = keyDB.collection("users");
